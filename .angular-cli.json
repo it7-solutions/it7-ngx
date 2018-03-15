@@ -14,6 +14,14 @@
     {
       "project": "./tsconfig.spec.json",
       "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/demo/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/demo/e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
     }
   ],
   "test": {
@@ -23,6 +31,37 @@
   },
   "apps": [
     {
+      "name": "demo",
+      "root": "apps/demo/src",
+      "outDir": "dist/apps/demo",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "../../../test.js",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "../../../tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "it7-button",
+      "root": "libs/it7-button/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
       "name": "$workspaceRoot",
       "root": ".",
       "appRoot": ""
@@ -30,7 +69,12 @@
   ],
   "defaults": {
     "schematics": {
-      "collection": "@nrwl/schematics"
+      "collection": "@nrwl/schematics",
+      "postGenerate": "npm run format",
+      "newProject": [
+        "app",
+        "lib"
+      ]
     },
     "styleExt": "css",
     "component": {}
