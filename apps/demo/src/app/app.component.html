@@ -1,4 +1,24 @@
+<h2>Button</h2>
 <it7-button>BUTTON</it7-button>
+
+<h2>Checkbox</h2>
+<it7-checkbox [(value)]="checkboxValue">Check or uncheck me</it7-checkbox>
+
+<h2>Input</h2>
+<it7-input [(value)]="inputValue"></it7-input>
+
+<h2>Popup</h2>
+<it7-popup>It is popup</it7-popup>
+
+<h2>Select (with settings)</h2>
+<it7-select [(value)]="selectValue" [settings]="selectSettings"></it7-select>
+
+<h2>Select (with choices)</h2>
+<it7-select [(value)]="selectValue" [choices]="selectChoices"></it7-select>
+
+<h2>Translate</h2>
+<div>Text</div>
+<div>{{ 'Text'|it7Translate }}</div>
 
 <div style="text-align:center">
     <h1>

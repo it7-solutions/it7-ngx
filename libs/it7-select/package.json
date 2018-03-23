@@ -1,0 +1,21 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "@it7-ngx/it7-select",
+  "version": "0.1.2",
+  "license": "MIT",
+  "private": true,
+  "peerDependencies": {
+    "@angular/common": "~5.2.0",
+    "@angular/core": "~5.2.0"
+  },
+  "devDependencies": {
+    "@angular/common": "~5.2.0",
+    "@angular/core": "~5.2.0"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public_api.ts"
+    },
+    "dest": "../../dist/it7-select"
+  }
+}

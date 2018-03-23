@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import {It7TranslateMockPipe} from '@it7-ngx/it7-translate';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -9,7 +11,8 @@ describe('AppComponent', () => {
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
-        declarations: [AppComponent]
+        declarations: [AppComponent, It7TranslateMockPipe],
+        schemas: [CUSTOM_ELEMENTS_SCHEMA]
       }).compileComponents();
     })
   );

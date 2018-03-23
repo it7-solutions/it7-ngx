@@ -1,0 +1,23 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "@it7-ngx/it7-http",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "peerDependencies": {
+    "@angular/common": "~5.2.0",
+    "@angular/core": "~5.2.0",
+    "@angular/http": "~5.2.0"
+  },
+  "devDependencies": {
+    "@angular/common": "~5.2.0",
+    "@angular/core": "~5.2.0",
+    "@angular/http": "~5.2.0"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "index.ts"
+    },
+    "dest": "../../dist/it7-http"
+  }
+}

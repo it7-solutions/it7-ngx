@@ -62,6 +62,42 @@
       "appRoot": ""
     },
     {
+      "name": "it7-checkbox",
+      "root": "libs/it7-checkbox/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
+      "name": "it7-http",
+      "root": "libs/it7-http/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
+      "name": "it7-input",
+      "root": "libs/it7-input/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
+      "name": "it7-popup",
+      "root": "libs/it7-popup/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
+      "name": "it7-select",
+      "root": "libs/it7-select/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
+      "name": "it7-translate",
+      "root": "libs/it7-translate/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
       "name": "$workspaceRoot",
       "root": ".",
       "appRoot": ""

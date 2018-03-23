@@ -6,7 +6,6 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:lib": "ng-packagr -p libs/it7-button/package.json",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -19,7 +18,14 @@
     "update": "./node_modules/.bin/nx update",
     "update:check": "./node_modules/.bin/nx update check",
     "update:skip": "./node_modules/.bin/nx update skip",
-    "postinstall": "./node_modules/.bin/nx postinstall"
+    "postinstall": "./node_modules/.bin/nx postinstall",
+    "build:lib:it7-button": "ng-packagr -p libs/it7-button/package.json",
+    "build:lib:it7-checkbox": "ng-packagr -p libs/it7-checkbox/package.json",
+    "build:lib:it7-http": "ng-packagr -p libs/it7-http/package.json",
+    "build:lib:it7-input": "ng-packagr -p libs/it7-input/package.json",
+    "build:lib:it7-popup": "ng-packagr -p libs/it7-popup/package.json",
+    "build:lib:it7-select": "ng-packagr -p libs/it7-select/package.json",
+    "build:lib:it7-translate": "ng-packagr -p libs/it7-translate/package.json"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +34,7 @@
     "@angular/compiler": "5.2.6",
     "@angular/core": "5.2.6",
     "@angular/forms": "5.2.6",
+    "@angular/http": "5.2.6",
     "@angular/platform-browser": "5.2.6",
     "@angular/platform-browser-dynamic": "5.2.6",
     "@angular/router": "5.2.6",

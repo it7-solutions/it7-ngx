@@ -1,0 +1,16 @@
+<div class="it7-select-wrapper" [ngClass]="{'it7-select-wrapper-readonly': readonly}">
+    <div class="it7-select-item-host-wrapper">
+        <it7-select-item-host
+                [readonly]="readonly"
+                [itemComponent]="itemComponent"
+                [item]="currentChoice"
+                (itemClick)="onItemClick()"></it7-select-item-host>
+        </div>
+    <div class="it7-select-choices-wrapper">
+        <it7-select-choices
+                *ngIf="showChoices"
+                [itemComponent]="itemComponent"
+                [choices]="choices"
+                (itemSelect)="onItemSelect($event)"></it7-select-choices>
+        </div>
+</div>
